@@ -66,6 +66,14 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 ## 5. Project Conventions
 
+**Branch naming:** Use the pattern `abass/<ticket-number>-<description>`, e.g. `abass/fcft-3581-surface-granular-case-creation-status`.
+
+**Plans:** Save all plans in `~/Development/plans/` before execution. Include the date and project as the header (e.g. `2026-05-12-entity-screener-foo`).
+
+**Sessions:** For each session, create a directory in `~/Development/sessions/`. Whenever you give a detailed breakdown of a task, cache it in this directory for quick recall. Tag the directory with the agent name (e.g. `2026-05-12-claude-foo`).
+
+**PR sizing:** Use Graphite (`gt`) to break big features into stacked PRs. For smaller, standalone changes, skip Graphite and ship a single PR.
+
 **Workspace:** Use worktrees when making git related changes to preserve the local copy of changes.
 
 **PR creation** for any change that is push only created a draft PR and tag codex for review
