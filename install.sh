@@ -17,6 +17,11 @@ echo "Installing Claude Code CLI..."
 npm install -g @anthropic-ai/claude-code
 echo "Claude Code CLI installation complete."
 
+echo "Pulling CLAUDE.md from gist..."
+mkdir -p "$HOME/.claude"
+curl -fsSL "https://gist.githubusercontent.com/bascoe10/1469e3e476c40a17296d0c68b5337b6e/raw/CLAUDE.md" -o "$HOME/.claude/CLAUDE.md"
+echo "CLAUDE.md installed to ~/.claude/CLAUDE.md."
+
 echo "Installing AWS CLI..."
 if command -v aws >/dev/null 2>&1; then
 	echo "AWS CLI already installed: $(aws --version)"
